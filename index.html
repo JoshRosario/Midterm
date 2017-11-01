@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stream Merch</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="logo"><a href="index.html">The Magical Conch</a></div>
+<!-- <nav class="nav-main">
+	<ul>
+		<li><a href="#" class="nav-item">Clothing</a>
+			<div class="nav-content">
+				<div class="nav-sub">
+					<ul>
+						<li class="subs"><a href="shirts.html">Shirts</a></li>
+						<li class="subs"><a href="hats.html">Hats</a></li>
+						<li class="subs"><a href="outerwear.html">Outerwear</a></li>
+					</ul>
+				</div>
+			</div>
+		</li>
+		<li><a href="Accesories.html" class="nav-item">Accesories</a></li>
+		<li><a href="Contact.html" class="nav-item">Contact</a></li>
+	</ul>
+</nav> -->
+
+<nav>
+  <ul>
+    <li>Clothing
+      <ul class="drop-menu menu-#{i}">
+        <li><a href="shirts.html">Shirts</a></li>
+        <li><a href="hats.html">Hats</a></li>
+        <li><a href="outerwear.html">Outerwear</a></li>
+      </ul>
+    </li>
+    <li><a href="Accesories.html">Accesories</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+	
+</body>
+	<div class="slides">
+		<img class="mySlides" src="img/5.jpg" style="width: 50%">
+		<img class="mySlides" src="img/6.jpg" style="width: 50%">
+		<img class="mySlides" src="img/7.jpg" style="width: 50%">
+		<img class="mySlides" src="img/8.jpg" style="width: 50%">
+		
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+ 	 showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+  		var i;
+  		var x = document.getElementsByClassName("mySlides");
+  		if (n > x.length) {slideIndex = 1}    
+  		if (n < 1) {slideIndex = x.length}
+  		for (i = 0; i < x.length; i++) {
+    	 x[i].style.display = "none";  
+  	}
+  		x[slideIndex-1].style.display = "block";  
+		}
+	</script>
+	
+
+
+</body>
+</html>
